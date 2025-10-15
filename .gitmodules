@@ -1,24 +1,24 @@
 [submodule "src/ext/openexr"]
 	path = src/ext/openexr
-	url = https://github.com/mmp/openexr.git
+	url = https://github.com/mmp/openexr
 [submodule "src/ext/zlib"]
 	path = src/ext/zlib
 	url = https://github.com/mitsuba-renderer/zlib
 [submodule "src/ext/glog"]
 	path = src/ext/glog
-	url = https://github.com/google/glog.git
+	url = https://github.com/google/glog
 [submodule "src/ext/ptex"]
 	path = src/ext/ptex
-	url = https://github.com/wdas/ptex.git
+	url = https://github.com/wdas/ptex
 [submodule "src/ext/double-conversion"]
 	path = src/ext/double-conversion
-	url = https://github.com/mmp/double-conversion.git
+	url = https://github.com/mmp/double-conversion
 [submodule "src/ext/opencv"]
 	path = src/ext/opencv
-	url = https://github.com/opencv/opencv.git
+	url = https://github.com/opencv/opencv
 [submodule "src/ext/opencv_contrib"]
 	path = src/ext/opencv_contrib
 	url = https://github.com/cg-tuwien/StatER-opencv_contrib.git
 [submodule "src/ext/rapidjson"]
 	path = src/ext/rapidjson
-	url = https://github.com/Tencent/rapidjson.git
+	url = https://github.com/Tencent/rapidjson
