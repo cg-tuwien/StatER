@@ -38,6 +38,9 @@ sudo docker exec -it stater bash
 
 3. Optional: if not already installed, install Docker and the NVIDIA Container Toolkit on the host:
     ```bash
+    # First ensure that scripts are executable..
+    chmod +x ./docker/install_docker.sh
+    chmod +x ./docker/install_nvidia_container_toolkit.sh 
     ./docker/install_docker.sh
     ./docker/install_nvidia_container_toolkit.sh 
     ``` 
