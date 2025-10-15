@@ -137,11 +137,11 @@ To enable adaptive sampling ("ASM+MCL"), pass the `as` option to the script:
 
 You can also build alternative variants of our code:
 ```bash
-./scripts/alternate-build/build-asm+m.sh   # "[ASM+]M"    built into build-asm+m/
-./scripts/alternate-build/build-asm+mc.sh  # "[ASM+]MC"   built into build-asm+mc/
-./scripts/alternate-build/build-asn+mcl.sh # "[ASN+]MCL"  built into build-asn+mcl/
-./scripts/alternate-build/build-mt.sh      # "MT{1-5}"    built into build-mt/
-./scripts/alternate-build/build-mt-jb.sh   # "MT{1–5}-JB" built into build-mt-jb/
+./scripts/alternate-builds/build-asm+m.sh   # "[ASM+]M"    built into build-asm+m/
+./scripts/alternate-builds/build-asm+mc.sh  # "[ASM+]MC"   built into build-asm+mc/
+./scripts/alternate-builds/build-asn+mcl.sh # "[ASN+]MCL"  built into build-asn+mcl/
+./scripts/alternate-builds/build-mt.sh      # "MT{1-5}"    built into build-mt/
+./scripts/alternate-builds/build-mt-jb.sh   # "MT{1–5}-JB" built into build-mt-jb/
 ```
 Refer to our paper and supplementary document for detailed explanations of these variants.
 
