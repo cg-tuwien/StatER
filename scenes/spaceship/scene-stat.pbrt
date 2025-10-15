@@ -1,0 +1,171 @@
+Include "../_active.pbrt"
+
+ExtraParams "extras"
+	"integer integratormaxdepth" [65]
+
+Transform [ 0.99069 0.007035 0.135953 -0 -0 0.998664 -0.0516768 -0 0.136134 -0.0511958 -0.989367 -0 -0.00580532 -0.616467 3.89659 1]
+#Sampler "sobol" "integer pixelsamples" [ 64 ] 
+#PixelFilter "triangle" "float xwidth" [ 1.000000 ] "float ywidth" [ 1.000000 ] 
+Film "image" "integer xresolution" [ 1280 ] "integer yresolution" [ 720 ] "string filename" [ "spaceship.pfm" ] 
+Camera "perspective" "float fov" [ 35.983398 ] 
+WorldBegin
+	MakeNamedMaterial "Backdrop" "string type" [ "matte" ] "rgb Kd" [ 0.100000 0.100000 0.100000 ] 
+	MakeNamedMaterial "RoughAluminium" "string type" [ "metal" ] "rgb eta" [ 1.657460 0.880369 0.521229 ] "rgb k" [ 9.223869 6.269523 4.837001 ] "bool remaproughness" [ "false" ] "float uroughness" [ 0.100000 ] "float vroughness" [ 0.100000 ] 
+	MakeNamedMaterial "RoughSteel" "string type" [ "metal" ] "rgb eta" [ 2.000000 2.000000 2.000000 ] "rgb k" [ 0.000000 0.000000 0.000000 ] "bool remaproughness" [ "false" ] "float uroughness" [ 0.100000 ] "float vroughness" [ 0.100000 ] 
+	MakeNamedMaterial "DarkPlastic" "string type" [ "substrate" ] "rgb Ks" [ 0.040000 0.040000 0.040000 ] "rgb Kd" [ 0.010000 0.010000 0.010000 ] "float uroughness" [ 0.200000 ] "float vroughness" [ 0.200000 ] "bool remaproughness" [ "false" ] 
+	MakeNamedMaterial "PinkLeather" "string type" [ "substrate" ] "rgb Ks" [ 0.040000 0.040000 0.040000 ] "rgb Kd" [ 0.256000 0.013000 0.080000 ] "float uroughness" [ 0.400000 ] "float vroughness" [ 0.400000 ] "bool remaproughness" [ "false" ] 
+	MakeNamedMaterial "Leather" "string type" [ "substrate" ] "rgb Ks" [ 0.040000 0.040000 0.040000 ] "rgb Kd" [ 0.034000 0.014000 0.008000 ] "float uroughness" [ 0.400000 ] "float vroughness" [ 0.400000 ] "bool remaproughness" [ "false" ] 
+	MakeNamedMaterial "RedLeather" "string type" [ "substrate" ] "rgb Ks" [ 0.040000 0.040000 0.040000 ] "rgb Kd" [ 0.163000 0.030000 0.037000 ] "float uroughness" [ 0.400000 ] "float vroughness" [ 0.400000 ] "bool remaproughness" [ "false" ] 
+	MakeNamedMaterial "BrightPinkLeather" "string type" [ "substrate" ] "rgb Ks" [ 0.040000 0.040000 0.040000 ] "rgb Kd" [ 0.772000 0.175000 0.262000 ] "float uroughness" [ 0.400000 ] "float vroughness" [ 0.400000 ] "bool remaproughness" [ "false" ] 
+	MakeNamedMaterial "Glass" "string type" [ "glass" ] "float index" [ 1.500000 ] "bool remaproughness" [ "false" ] "float uroughness" [ 0.010000 ] "float vroughness" [ 0.010000 ] 
+	MakeNamedMaterial "DarkRubber" "string type" [ "substrate" ] "rgb Ks" [ 0.040000 0.040000 0.040000 ] "rgb Kd" [ 0.025000 0.025000 0.025000 ] "float uroughness" [ 0.400000 ] "float vroughness" [ 0.400000 ] "bool remaproughness" [ "false" ] 
+	MakeNamedMaterial "Black" "string type" [ "matte" ] "rgb Kd" [ 0.000000 0.000000 0.000000 ] 
+	NamedMaterial "Backdrop" 
+	Shape "plymesh" "string filename" [ "models/Mesh050.ply" ] 
+	NamedMaterial "RoughAluminium" 
+	Shape "plymesh" "string filename" [ "models/Mesh042.ply" ] 
+	NamedMaterial "Leather" 
+	Shape "plymesh" "string filename" [ "models/Mesh044.ply" ] 
+	NamedMaterial "RoughAluminium" 
+	Shape "plymesh" "string filename" [ "models/Mesh038.ply" ] 
+	Shape "plymesh" "string filename" [ "models/Mesh040.ply" ] 
+	Shape "plymesh" "string filename" [ "models/Mesh072.ply" ] 
+	NamedMaterial "RoughSteel" 
+	Shape "plymesh" "string filename" [ "models/Mesh033.ply" ] 
+	AttributeBegin
+		AreaLightSource "diffuse" "rgb L" [ 20.000000 3.000000 3.000000 ] 
+		NamedMaterial "Black" 
+		Shape "plymesh" "string filename" [ "models/Mesh043.ply" ] 
+	AttributeEnd
+	NamedMaterial "Leather" 
+	Shape "plymesh" "string filename" [ "models/Mesh028.ply" ] 
+	NamedMaterial "RedLeather" 
+	Shape "plymesh" "string filename" [ "models/Mesh055.ply" ] 
+	NamedMaterial "DarkPlastic" 
+	Shape "plymesh" "string filename" [ "models/Mesh053.ply" ] 
+	NamedMaterial "RedLeather" 
+	Shape "plymesh" "string filename" [ "models/Mesh036.ply" ] 
+	NamedMaterial "PinkLeather" 
+	Shape "plymesh" "string filename" [ "models/Mesh035.ply" ] 
+	NamedMaterial "RedLeather" 
+	Shape "plymesh" "string filename" [ "models/Mesh031.ply" ] 
+	NamedMaterial "PinkLeather" 
+	Shape "plymesh" "string filename" [ "models/Mesh030.ply" ] 
+	NamedMaterial "RoughAluminium" 
+	Shape "plymesh" "string filename" [ "models/Mesh027.ply" ] 
+	NamedMaterial "RoughSteel" 
+	Shape "plymesh" "string filename" [ "models/Mesh064.ply" ] 
+	Shape "plymesh" "string filename" [ "models/Mesh058.ply" ] 
+	AttributeBegin
+		AreaLightSource "diffuse" "rgb L" [ 3.886280 3.772550 3.431370 ] 
+		Material "matte" "rgb Kd" [ 0.000000 0.000000 0.000000 ] 
+		Shape "plymesh" "string filename" [ "models/Mesh029.ply" ] 
+	AttributeEnd
+	NamedMaterial "Black" 
+	Shape "plymesh" "string filename" [ "models/Mesh080.ply" ] 
+	NamedMaterial "RoughAluminium" 
+	Shape "plymesh" "string filename" [ "models/Mesh067.ply" ] 
+	Shape "plymesh" "string filename" [ "models/Mesh060.ply" ] 
+	NamedMaterial "RoughSteel" 
+	Shape "plymesh" "string filename" [ "models/Mesh026.ply" ] 
+	Shape "plymesh" "string filename" [ "models/Mesh047.ply" ] 
+	NamedMaterial "DarkPlastic" 
+	Shape "plymesh" "string filename" [ "models/Mesh061.ply" ] 
+	NamedMaterial "DarkRubber" 
+	Shape "plymesh" "string filename" [ "models/Mesh063.ply" ] 
+	NamedMaterial "RoughAluminium" 
+	Shape "plymesh" "string filename" [ "models/Mesh065.ply" ] 
+	Shape "plymesh" "string filename" [ "models/Mesh048.ply" ] 
+	Shape "plymesh" "string filename" [ "models/Mesh066.ply" ] 
+	NamedMaterial "DarkRubber" 
+	Shape "plymesh" "string filename" [ "models/Mesh068.ply" ] 
+	NamedMaterial "RoughSteel" 
+	Shape "plymesh" "string filename" [ "models/Mesh071.ply" ] 
+	NamedMaterial "RoughAluminium" 
+	Shape "plymesh" "string filename" [ "models/Mesh046.ply" ] 
+	Shape "plymesh" "string filename" [ "models/Mesh076.ply" ] 
+	Shape "plymesh" "string filename" [ "models/Mesh059.ply" ] 
+	Shape "plymesh" "string filename" [ "models/Mesh057.ply" ] 
+	Shape "plymesh" "string filename" [ "models/Mesh062.ply" ] 
+	Shape "plymesh" "string filename" [ "models/Mesh074.ply" ] 
+	Shape "plymesh" "string filename" [ "models/Mesh075.ply" ] 
+	Shape "plymesh" "string filename" [ "models/Mesh078.ply" ] 
+	Shape "plymesh" "string filename" [ "models/Mesh081.ply" ] 
+	Shape "plymesh" "string filename" [ "models/Mesh034.ply" ] 
+	Shape "plymesh" "string filename" [ "models/Mesh084.ply" ] 
+	Shape "plymesh" "string filename" [ "models/Mesh085.ply" ] 
+	Shape "plymesh" "string filename" [ "models/Mesh073.ply" ] 
+	Shape "plymesh" "string filename" [ "models/Mesh077.ply" ] 
+	Shape "plymesh" "string filename" [ "models/Mesh087.ply" ] 
+	Shape "plymesh" "string filename" [ "models/Mesh052.ply" ] 
+	Shape "plymesh" "string filename" [ "models/Mesh025.ply" ] 
+	Shape "plymesh" "string filename" [ "models/Mesh024.ply" ] 
+	Shape "plymesh" "string filename" [ "models/Mesh086.ply" ] 
+	Shape "plymesh" "string filename" [ "models/Mesh023.ply" ] 
+	Shape "plymesh" "string filename" [ "models/Mesh021.ply" ] 
+	Shape "plymesh" "string filename" [ "models/Mesh039.ply" ] 
+	Shape "plymesh" "string filename" [ "models/Mesh020.ply" ] 
+	Shape "plymesh" "string filename" [ "models/Mesh032.ply" ] 
+	NamedMaterial "RoughSteel" 
+	Shape "plymesh" "string filename" [ "models/Mesh019.ply" ] 
+	NamedMaterial "RoughAluminium" 
+	Shape "plymesh" "string filename" [ "models/Mesh018.ply" ] 
+	Shape "plymesh" "string filename" [ "models/Mesh070.ply" ] 
+	Shape "plymesh" "string filename" [ "models/Mesh016.ply" ] 
+	Shape "plymesh" "string filename" [ "models/Mesh015.ply" ] 
+	Shape "plymesh" "string filename" [ "models/Mesh054.ply" ] 
+	Shape "plymesh" "string filename" [ "models/Mesh013.ply" ] 
+	Shape "plymesh" "string filename" [ "models/Mesh079.ply" ] 
+	Shape "plymesh" "string filename" [ "models/Mesh041.ply" ] 
+	Shape "plymesh" "string filename" [ "models/Mesh012.ply" ] 
+	Shape "plymesh" "string filename" [ "models/Mesh011.ply" ] 
+	Shape "plymesh" "string filename" [ "models/Mesh083.ply" ] 
+	Shape "plymesh" "string filename" [ "models/Mesh010.ply" ] 
+	Shape "plymesh" "string filename" [ "models/Mesh069.ply" ] 
+	Shape "plymesh" "string filename" [ "models/Mesh009.ply" ] 
+	Shape "plymesh" "string filename" [ "models/Mesh007.ply" ] 
+	Shape "plymesh" "string filename" [ "models/Mesh017.ply" ] 
+	NamedMaterial "RoughSteel" 
+	Shape "plymesh" "string filename" [ "models/Mesh006.ply" ] 
+	NamedMaterial "RoughAluminium" 
+	Shape "plymesh" "string filename" [ "models/Mesh037.ply" ] 
+	NamedMaterial "RoughSteel" 
+	Shape "plymesh" "string filename" [ "models/Mesh008.ply" ] 
+	Shape "plymesh" "string filename" [ "models/Mesh045.ply" ] 
+	NamedMaterial "RoughAluminium" 
+	Shape "plymesh" "string filename" [ "models/Mesh005.ply" ] 
+	Shape "plymesh" "string filename" [ "models/Mesh004.ply" ] 
+	NamedMaterial "RoughSteel" 
+	Shape "plymesh" "string filename" [ "models/Mesh049.ply" ] 
+	Shape "plymesh" "string filename" [ "models/Mesh082.ply" ] 
+	Shape "plymesh" "string filename" [ "models/Mesh014.ply" ] 
+	Shape "plymesh" "string filename" [ "models/Mesh003.ply" ] 
+	NamedMaterial "RoughAluminium" 
+	Shape "plymesh" "string filename" [ "models/Mesh002.ply" ] 
+	NamedMaterial "RoughSteel" 
+	Shape "plymesh" "string filename" [ "models/Mesh051.ply" ] 
+	NamedMaterial "Glass" 
+	Shape "plymesh" "string filename" [ "models/Mesh001.ply" ] 
+	NamedMaterial "RoughAluminium" 
+	Shape "plymesh" "string filename" [ "models/Mesh056.ply" ] 
+	NamedMaterial "BrightPinkLeather" 
+	Shape "plymesh" "string filename" [ "models/Mesh000.ply" ] 
+	NamedMaterial "RedLeather" 
+	Shape "plymesh" "string filename" [ "models/Mesh022.ply" ] 
+	AttributeBegin
+		AreaLightSource "diffuse" "rgb L" [ 9.000000 9.000000 10.000000 ] 
+		Material "matte" "rgb Kd" [ 0.000000 0.000000 0.000000 ] 
+		Shape "trianglemesh" "integer indices" [ 0 1 2 0 2 3 ] "point P" [ -2.04973 5.14472 0.974365 2.04973 5.14472 0.974365 2.04973 5.14472 2.24722 -2.04973 5.14472 2.24721 ] "normal N" [ 1.50996e-007 -1 8.74228e-008 1.50996e-007 -1 8.74228e-008 1.50996e-007 -1 8.74228e-008 1.50996e-007 -1 8.74228e-008 ] "float uv" [ 0 0 1 0 1 1 0 1 ] 
+	AttributeEnd
+	AttributeBegin
+		AreaLightSource "diffuse" "rgb L" [ 9.000000 9.000000 10.000000 ] 
+		Material "matte" "rgb Kd" [ 0.000000 0.000000 0.000000 ] 
+		Shape "trianglemesh" "integer indices" [ 0 1 2 0 2 3 ] "point P" [ -2.04973 5.14472 -2.24722 2.04973 5.14472 -2.24721 2.04973 5.14472 -0.974365 -2.04973 5.14472 -0.974365 ] "normal N" [ 1.50996e-007 -1 8.74228e-008 1.50996e-007 -1 8.74228e-008 1.50996e-007 -1 8.74228e-008 1.50996e-007 -1 8.74228e-008 ] "float uv" [ 0 0 1 0 1 1 0 1 ] 
+	AttributeEnd
+	TransformBegin
+		Transform [ -1 0 8.74228e-008 0 -8.74228e-008 0 -1 0 0 1 0 0 0 0 0 1]
+		LightSource "infinite" "rgb L" [ 0.300000 0.300000 0.300000 ] 
+	TransformEnd
+	NamedMaterial "Backdrop" 
+	Shape "trianglemesh" "integer indices" [ 0 1 2 0 2 3 ] "point P" [ -39.236 78.436 -30.208 39.236 78.436 -30.208 39.236 -0.0359497 -30.208 -39.236 -0.0359497 -30.208 ] "normal N" [ 0 -1.31134e-007 -1 0 -1.31134e-007 -1 0 -1.31134e-007 -1 0 -1.31134e-007 -1 ] "float uv" [ 0 0 1 0 1 1 0 1 ] 
+WorldEnd

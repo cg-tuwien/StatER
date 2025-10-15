@@ -1,0 +1,31 @@
+# © 2025 Hiroyuki Sakai
+
+Integrator "statpath"
+  "integer  maxdepth"            [65]
+  "bool     expiterations"       ["false"]
+  "bool     outputexpiterations" ["true"]
+  "integer  iterations"          [512]
+
+  "bool     adaptivesampling" ["true"]
+  "bool     denoisefilm"      ["true"]
+  "bool     calcstats"        ["false"]
+  "bool     calcstatmcstats"  ["false"]
+  "bool     calcprodenstats"  ["false"]
+  "bool     calcmoonstats"    ["false"]
+  "bool     calcgbuffers"     ["false"]
+
+  "float    varcizvalue"  [2.80703]
+  "float    filtersd"     [10]
+  "integer  filterradius" [20]
+
+  "string   varfilterbuffers"    ["albedo" "normal"]
+  "float    varfilterbuffersds"  [0.02 0.1]
+  "string   meanfilterbuffers"   ["albedo" "normal"]
+  "float    meanfilterbuffersds" [0.02 0.1]
+
+  "float    lambdas" [.01 .25 .5 .75 1 3]
+
+  "string   outputregex" ["film|filmD"]
+
+Sampler "random"
+  "integer  pixelsamples" [32]

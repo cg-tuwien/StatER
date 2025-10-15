@@ -1,0 +1,19 @@
+*~
+src/build
+src/bin
+src/objs
+.sconsign.dblite
+build*
+build-moon
+out
+0
+1
+2
+3
+
+# macOS system files
+.DS_Store
+**/.DS_Store
+._*
+**/._*
+
