@@ -54,7 +54,7 @@ We have prepared files required to run our project within a Docker container [he
 
 ### Manual Building
 
-Skip this if you have used the automatic approach [above](#automatic-building-for-ubuntu-2204-lts).
+Skip this if you have used the automatic approach [above](#automatic-building-for-a-fresh-ubuntu-2204-lts-install).
 
 1.  Clone this repository (OpenCV will be cloned automatically as a submodule):
     ```bash
